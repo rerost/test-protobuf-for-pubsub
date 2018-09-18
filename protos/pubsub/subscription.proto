@@ -1,0 +1,14 @@
+syntax = "proto3";
+package pubsub;
+
+import "message.proto";
+import "custom_option.proto";
+
+message Subscription {
+  option (subscription) = {
+    subscriber_name: "subscriber"
+    use_case: "elasticsearch"
+  };
+
+  Message message = 1;
+}

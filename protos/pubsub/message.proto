@@ -1,0 +1,15 @@
+syntax = "proto3";
+package pubsub;
+
+import "custom_option.proto";
+
+message Message {
+  option (service) = {
+    project_name: "123"
+    event_type: "event"
+    publisher_name: "publisher"
+  };
+
+  int64 user_id = 1;
+  string self_introduction = 2;
+}
