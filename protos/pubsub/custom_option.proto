@@ -1,4 +1,4 @@
-syntax="proto3";
+syntax = "proto3";
 package pubsub;
 
 import "google/protobuf/descriptor.proto";
